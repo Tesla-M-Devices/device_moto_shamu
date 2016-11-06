@@ -2,7 +2,7 @@
  {
    "repository":  "neobuddy89/shamu",
    "target_path": "kernel/moto/shamu",
-   "branch":      "cm-14.0"
+   "branch":      "cm-14.1"
  },
  {
    "repository":  "BigTopKrazies/proprietary_vendor_motorola",
