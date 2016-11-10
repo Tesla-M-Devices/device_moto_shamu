@@ -146,7 +146,8 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
 
-USE_CLANG_PLATFORM_BUILD := true
+# Use Snapdragon LLVM, if available
+TARGET_USE_SDCLANG := true
 
 # Disable dex-preopt of prebuilts to save space.
 DONT_DEXPREOPT_PREBUILTS := true
