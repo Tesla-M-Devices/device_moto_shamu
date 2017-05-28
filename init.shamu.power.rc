@@ -83,6 +83,3 @@ on property:dev.bootcomplete=1
     write /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis 75000
     write /sys/module/cpu_boost/parameters/input_boost_ms 400
     write /dev/cpuctl/apps/cpu.notify_on_migrate 0
-
-    # Set idle GPU to 240 Mhz
-    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 4
