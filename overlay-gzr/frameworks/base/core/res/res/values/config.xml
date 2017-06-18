@@ -31,6 +31,16 @@
          We set this to blue as low is red and charged is green -->
     <integer name="config_notificationsBatteryMediumARGB">0xFF0000FF</integer>
 
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
+    <!-- Do the battery/notification LEDs support pulsing?
+           Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
+
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
@@ -73,7 +83,4 @@
         <item>com.google.android.apps.tycho</item>
     </string-array>
 
-    <!-- Do the battery/notification LEDs support pulsing?
-           Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">true</bool>
 </resources>
