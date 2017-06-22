@@ -170,7 +170,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors
+    libqcomvoiceprocessingdescriptors \
+    libqcompostprocbundle
 
 PRODUCT_PROPERTY_OVERRIDES += \
     fmas.spkr_6ch=35,20,110 \
