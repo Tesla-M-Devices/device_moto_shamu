@@ -108,7 +108,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Compile libhwui in performance mode
-HWUI_COMPILE_FOR_PERF := true
+#HWUI_COMPILE_FOR_PERF := true
 
 TARGET_RECOVERY_FSTAB = device/moto/shamu/fstab.shamu
 # Ensure f2fstools are built
@@ -141,11 +141,7 @@ DONT_DEXPREOPT_PREBUILTS := true
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
-# Use Snapdragon LLVM for Nightlies, if available
-ifeq ($(TESLA_BUILDTYPE), UNOFFICIAL)
-USE_CLANG_PLATFORM_BUILD := true
-else
+# Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
-endif
 
 -include vendor/moto/shamu/BoardConfigVendor.mk
